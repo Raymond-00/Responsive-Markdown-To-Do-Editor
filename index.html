@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Markdown & To-Do Editor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <section class="markdown">
+      <h2>Markdown Editor</h2>
+      <textarea id="markdownInput" placeholder="Write markdown here..."></textarea>
+      <div id="preview"></div>
+    </section>
+
+    <section class="todo">
+      <h2>To-Do List</h2>
+      <input type="text" id="todoInput" placeholder="Add a task">
+      <button onclick="addTask()">Add</button>
+      <ul id="todoList"></ul>
+    </section>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
